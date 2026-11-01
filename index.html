@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Carenery helps families find clear health information from trusted public sources." />
+    <meta name="theme-color" content="#173f5f" />
+    <title>Carenery | Clear health information</title>
+    <link rel="icon" href="./brand/carenery-app-icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Carenery home">
+        <img class="brand-lockup" src="./brand/carenery-verified-lockup.svg" alt="" />
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <button class="nav-link active" data-route="home">Home</button>
+        <button class="nav-link" data-route="conditions">Health topics</button>
+        <button class="nav-link" data-route="why">Why</button>
+        <button class="nav-link" data-route="models">Sources</button>
+        <button class="nav-link" data-route="copilot">Health Copilot</button>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button saved-button" id="savedButton" aria-label="View saved health topics">
+          <span>Saved</span><span class="saved-count" id="savedCount">0</span>
+        </button>
+        <button class="primary-button compact" data-route="copilot">Ask a health question</button>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="view active" id="view-home" data-view="home">
+        <div class="hero-wrap">
+          <div class="hero-copy">
+            <div class="eyebrow light">Health information for families</div>
+            <h1>Clear answers.<br /><em>Trusted sources.</em></h1>
+            <p class="hero-lede">Learn about a health condition. Find reliable sources. Get ready to talk with a doctor.</p>
+            <div class="hero-actions">
+              <button class="light-button" data-route="copilot">Ask a health question</button>
+              <button class="ghost-button" data-route="conditions">Browse health topics</button>
+            </div>
+            <div class="trust-line"><img class="verified-mark" src="./brand/carenery-app-icon.svg" alt="" /><span class="source-seals" aria-hidden="true"><i>CDC</i><i>NIH</i><i>FDA</i></span><span>Public sources. No ads. No tracking.</span></div>
+          </div>
+          <div class="hero-visual" aria-label="Example Type 2 Diabetes guide">
+            <div class="care-card main-care-card">
+              <div class="care-card-head"><span class="condition-glyph coral">T2</span><div><small>EXAMPLE HEALTH GUIDE</small><strong>Type 2 Diabetes</strong></div><span class="status-dot"><img src="./brand/carenery-verified-mark.svg" alt="" />Source linked</span></div>
+              <div class="signal-row"><div><small>What you can review</small><b>Four care topics</b></div><span class="step-count">4</span></div>
+              <div class="mini-check"><span>1</span><div><b>Recruiting studies</b><small>From ClinicalTrials.gov</small></div></div>
+              <div class="mini-check"><span>2</span><div><b>Specialist search</b><small>From the CMS registry</small></div></div>
+              <button data-condition="diabetes">Open the example guide</button>
+            </div>
+          </div>
+        </div>
+
+        <section class="section stats-band" aria-label="Carenery coverage">
+          <div><strong>18</strong><span>health guides</span></div><div><strong>2</strong><span>public databases</span></div><div><strong>8</strong><span>trusted sources</span></div><div><strong>0</strong><span>ads or trackers</span></div>
+        </section>
+
+        <section class="section home-links" aria-label="Learn more about Carenery">
+          <article><div><span>Why Carenery</span><h2>A doctor in the family inspired it.</h2></div><button class="text-button" data-route="why">Read Avery L.'s story</button></article>
+          <article><div><span>How we choose information</span><h2>Public sources come first.</h2></div><button class="text-button" data-route="models">See all sources</button></article>
+        </section>
+
+        <section class="section pathway-grid" aria-label="How to use Carenery">
+          <article class="feature-card peach"><span class="number">01</span><div class="feature-icon">READ</div><h3>Learn</h3><p>Read a short guide about the condition and the main care topics.</p><button data-route="conditions">Browse health guides</button></article>
+          <article class="feature-card mint"><span class="number">02</span><div class="feature-icon">CHECK</div><h3>Check</h3><p>Open the source, look for studies, or find a specialist in your state.</p><button data-condition="diabetes">Try a live search</button></article>
+          <article class="feature-card blue"><span class="number">03</span><div class="feature-icon">ASK</div><h3>Prepare</h3><p>Turn a reviewed guide into a question sheet for the next appointment.</p><button data-appointment="diabetes">Make a question sheet</button></article>
+        </section>
+
+        <section class="section spotlight">
+          <div class="spotlight-copy"><div class="eyebrow light">Example health guide</div><h2>See how a guide works.</h2><p>The Type 2 Diabetes guide shows the main care topics. It also links to research, specialists, and an appointment question sheet.</p><ul><li>Care topics in plain language</li><li>Recruiting studies by state</li><li>Questions to take to a care visit</li></ul><button class="light-button" data-condition="diabetes">Open the guide</button></div>
+          <div class="spotlight-panel"><div class="weekly-label"><span>Three steps</span><small>LIVE WEBSITE</small></div><div class="demo-number">3</div><div class="priority-stack"><div><span class="picon">1</span><p><b>Open a guide</b><small>Choose Type 2 Diabetes</small></p><em>18 topics</em></div><div><span class="picon">2</span><p><b>Check live records</b><small>Studies and specialists</small></p><em>Public data</em></div><div><span class="picon">3</span><p><b>Prepare questions</b><small>Copy, print, or download</small></p><em>On device</em></div></div></div>
+        </section>
+
+        <section class="section impact-strip" aria-label="Why this matters"><div><strong>6 in 10</strong><span>US adults live with a long-term disease</span><a href="https://www.cdc.gov/chronic-disease/about/index.html" target="_blank" rel="noreferrer">Read the CDC source</a></div><div><strong>63 million</strong><span>Americans care for a family member</span><a href="https://www.caregivingintheus.org/report_categories/caregiving-in-the-us-report-2025-downloads/" target="_blank" rel="noreferrer">Read the 2025 report</a></div></section>
+        <section class="section cta-panel"><div><span class="eyebrow light">Start here</span><h2>What would you like<br />to learn about?</h2></div><button class="light-button" data-route="copilot">Ask a health question</button></section>
+      </section>
+
+      <section class="view" id="view-why" data-view="why">
+        <div class="page-shell why-page">
+          <div class="page-heading centered"><div class="eyebrow">Why I built Carenery</div><h1>A doctor in the house.<br /><em>A guide for every family.</em></h1><p>Carenery began with a simple question: How can families find health information they can trust?</p></div>
+          <section class="why-story" aria-labelledby="why-story-title">
+            <div><span class="developer-label">Developer</span><h2 id="why-story-title">Avery L.</h2></div>
+            <div class="why-copy"><p>My dad is a doctor. When an online health search got confusing, I could ask him which source to trust.</p><p>I saw young friends search for answers about a parent or grandparent. They did not always have a doctor at home to help. Even my dad is only one person, and no one can know every rare or long-term condition.</p><p>I built Carenery to feel like a trusted doctor in the family: a clear place to start, a guide to good sources, and help getting ready to talk with a real care team.</p></div>
+          </section>
+          <section class="why-values" aria-label="What guides Carenery"><article><span>01</span><h3>Start with trust</h3><p>Use public health sources and show where each fact comes from.</p></article><article><span>02</span><h3>Use clear words</h3><p>Make health information easier for families to read and discuss.</p></article><article><span>03</span><h3>Support real care</h3><p>Help people prepare questions. A licensed health professional makes medical decisions.</p></article></section>
+          <section class="why-next"><div><span class="eyebrow">Explore the project</span><h2>See how Carenery chooses information.</h2></div><button class="primary-button" data-route="models">View sources</button></section>
+        </div>
+      </section>
+
+      <section class="view" id="view-conditions" data-view="conditions">
+        <div class="page-shell">
+          <div class="page-heading split-heading"><div><div class="eyebrow">Health topics</div><h1>Find clear health information.</h1><p>Open one of 18 guides. Is your condition missing? Search trusted public sources.</p></div><label class="search-box"><span class="search-label">Search</span><input id="conditionSearch" type="search" placeholder="Type a condition name" /></label></div>
+          <div class="filter-row" id="categoryFilters" aria-label="Filter health topics"></div>
+          <div class="condition-grid" id="conditionGrid"></div>
+          <div class="empty-results" id="emptyResults" hidden><span class="empty-label">No guide found</span><h3>We do not have a reviewed guide yet.</h3><p id="emptyResultsText">Try another term or search trusted public sources.</p><button class="primary-button" id="researchEmpty" data-route="copilot">Research this condition</button></div>
+        </div>
+      </section>
+
+      <section class="view" id="view-models" data-view="models">
+        <div class="page-shell evidence-page">
+          <div class="page-heading centered"><img class="source-page-mark" src="./brand/carenery-verified-mark.svg" alt="Carenery verified mark" /><div class="eyebrow">Our sources</div><h1>Clear information.<br /><em>Sources you can open.</em></h1><p>Carenery uses saved guides, simple rules, and public databases. It does not diagnose health problems.</p></div>
+          <div class="principles-grid"><article><span>01</span><h3>Reviewed guides</h3><p>Each guide has four care topics. It links to MedlinePlus from the National Library of Medicine.</p></article><article><span>02</span><h3>More health topics</h3><p>If a guide is not ready, search NIH, MedlinePlus, GARD, or ClinicalTrials.gov.</p></article><article><span>03</span><h3>Current public records</h3><p>Study and provider results come from public databases. You choose when to search.</p></article></div>
+          <section class="truth-grid"><article><span>YOU CAN</span><h2>Use Carenery to</h2><ul><li>Search 18 reviewed health guides</li><li>Open the source for each guide</li><li>Find recruiting studies by state</li><li>Create an appointment question sheet</li><li>Search public provider records</li><li>Start research on a rare disease</li></ul></article><article><span>YOUR PRIVACY</span><h2>What stays on your device</h2><ul><li>Your saved health topics</li><li>Your current Health Copilot messages</li><li>Your appointment draft until you close or reload the page</li><li>No account or health profile</li><li>No ads, analytics, or tracking</li><li>No automatic sharing with outside tools</li></ul></article></section>
+          <section class="architecture-card"><div><div class="eyebrow light">How a search works</div><h2>From your question<br />to the source.</h2><p>Carenery checks exact guide names and aliases first. It can label a likely spelling match. No guide yet? It offers trusted websites to search. Public records load only after you click.</p></div><div class="arch-flow"><div><span>Your question</span><small>Typed in the browser</small></div><b>1</b><div><span>Exact or spelling match</span><small>Browser-side rules</small></div><b>2</b><div><span>Guide or public source</span><small>Opened by you</small></div></div></section>
+          <section class="verification-summary" aria-labelledby="verification-title"><div><span class="eyebrow">Tested behavior</span><h2 id="verification-title">Checks you can reproduce.</h2><p>These are software tests, not medical validation. Methods and limits are documented with the project.</p></div><article><strong>72/72</strong><span>question-routing cases passed</span><small>Exact, misspelled, unmatched, and rare-disease terms</small></article><article><strong>34/34</strong><span>browser accessibility checks passed</span><small>Desktop, mobile, keyboard, dialogs, motion, labels, and contrast</small></article><article><strong>18/18</strong><span>appointment sheets passed</span><small>Every guide creates a sourced, local question sheet</small></article></section>
+        </div>
+      </section>
+
+      <section class="view copilot-view" id="view-copilot" data-view="copilot">
+        <div class="copilot-shell">
+          <aside class="copilot-aside"><div class="eyebrow light">Health Copilot</div><h1>Ask a health question.</h1><p>Find a reviewed guide. You can also search trusted sources for a rare or long-term condition.</p><div class="info-only"><span>i</span><p><b>For information only</b><small>Carenery cannot diagnose a condition or give emergency care. Ask a doctor before making a health decision.</small></p></div><div class="starter-list"><p>Example questions</p><button data-prompt="How can I better understand type 2 diabetes care?">How is Type 2 Diabetes managed?</button><button data-prompt="Tell me about neurofibormatosis">What is neurofibromatosis?</button><button data-prompt="How do I find recruiting clinical trials?">How can I find a clinical trial?</button><button data-prompt="How can I find a specialist near me?">How can I find a specialist?</button></div></aside>
+          <div class="chat-panel"><div class="chat-header"><div><span class="copilot-mark"><img src="./brand/carenery-app-icon.svg" alt="" /></span><p><b>Carenery Health Copilot</b><small>Health guides and source searches</small></p></div><button id="clearChat" class="icon-button" aria-label="Clear conversation">Clear</button></div><div class="messages" id="messages" role="log" aria-live="polite"></div><form class="chat-composer" id="chatForm"><textarea id="chatInput" rows="1" placeholder="Type a health condition or question" aria-label="Message"></textarea><button type="submit" aria-label="Send message">Send</button><small>Check medical decisions with a doctor or other licensed health professional.</small></form></div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation"><button class="active" data-route="home">Home</button><button data-route="conditions">Topics</button><button data-route="why">Why</button><button data-route="models">Sources</button><button data-route="copilot">Ask</button></nav>
+    <dialog class="detail-dialog" id="conditionDialog" aria-modal="true" aria-labelledby="conditionTitle"><div class="dialog-shell"><button class="dialog-close" id="closeDialog" aria-label="Close health guide">Close</button><div id="conditionDetail"></div></div></dialog>
+    <dialog class="appointment-dialog" id="appointmentDialog" aria-modal="true" aria-labelledby="appointmentTitle"><div class="appointment-shell"><button class="dialog-close" id="closeAppointment" aria-label="Close appointment question sheet">Close</button><div id="appointmentDetail"></div></div></dialog>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="./matching.js"></script>
+    <script src="./appointment.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
